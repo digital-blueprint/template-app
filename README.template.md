@@ -3,6 +3,8 @@ Relay-API App README Template
 
 # Digital Signing Application
 
+A brief description of the application in 2-3 sentences.
+
 [GitLab Repository](https://gitlab.tugraz.at/dbp/{{repository-path}}) |
 [npmjs package](https://www.npmjs.com/package/@dbp-topics/signature) |
 [Unpkg CDN](https://unpkg.com/browse/@dbp-topics/signature/) |
