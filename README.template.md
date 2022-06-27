@@ -20,13 +20,13 @@ List of placeholders:
 
 # {{Name}} Application
 
-{{app-description}}
-
 [GitLab Repository](https://gitlab.tugraz.at/dbp/{{app-path}}) |
 [npmjs package](https://www.npmjs.com/package/@dbp-topics/{{name}}) |
 [Unpkg CDN](https://unpkg.com/browse/@dbp-topics/{{name}}/) |
 [{{Name}} Bundle](https://gitlab.tugraz.at/dbp/{{bundle-path}}) |
 [Project documentation](https://dbp-demo.tugraz.at/site/software/{{name}}.html)
+
+{{app-description}}
 
 ## Prerequisites
 
@@ -85,6 +85,7 @@ npx @digital-blueprint/cli update-app {{name}}
 ```
 
 ## Activities
+
 This app has the following activities:
 - {{list-of-activities}}
 
@@ -93,6 +94,7 @@ You can find the documentation of these activities in the [{{name}} activities d
 ## Adapt app
 
 ### Functionality
+
 You can add multiple attributes to the `<dbp-{{name}}>` tag.
 
 | attribute name | value | Link to description |
@@ -109,7 +111,6 @@ You can add multiple attributes to the `<dbp-{{name}}>` tag.
 
 {{app-based-attributes}}
 
-
 #### Mandatory attributes
 
 If you are not using the `provider-root` attribute to "terminate" all provider attributes
@@ -124,12 +125,11 @@ you need to manually add these attributes so that the topic will work properly:
 </dbp-{{name}}>
 ```
 
-
 ### Design
-For frontend design customizations, such as logo, colors, font, favicon, and more, take a look at the [theming documentation](https://dbp-demo.tugraz.at/dev-guide/frontend/theming/).
 
+For frontend design customizations, such as logo, colors, fonts, favicon, and more take a look at the [theming documentation](https://dbp-demo.tugraz.at/dev-guide/frontend/theming/).
 
-## "dbp-{{name}}" Slots
+## "dbp-{{name}}" slots
 
-These are common slots for the app-shell. You can find the documentation of these slot in the [app-shell documentation](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/app-shell).
+These are common slots for the app-shell. You can find the documentation of these slots in the [app-shell documentation](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/app-shell).
 For the app specific slots take a look at the [{{name}} activities](https://gitlab.tugraz.at/dbp/{{app-path}}/-/tree/main/src).
