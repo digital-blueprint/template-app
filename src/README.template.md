@@ -25,8 +25,10 @@ List of placeholders:
 
 Here you can find the individual activities of the `{{name}}` App. If you want to use the whole app look at [{{name}}](https://gitlab.tugraz.at/dbp/{{app-path}}).
 
-<!-- ## Usage of an activity
-TODO add description how to only use an activity alone here -->
+## Usage of an activity
+
+You can use every activity alone. Take a look at our examples [here]({{app-path}}/-/tree/main/examples).
+
 
 ## Activities
 
