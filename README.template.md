@@ -64,6 +64,8 @@ If you want to install the DBP Signature App in a new folder `{{name}}-app` with
 npx @digital-blueprint/cli install-app {{name}} {{name}}-app /
 ```
 
+For more information on the "install-app" command see https://gitlab.tugraz.at/dbp/cli/#install-apps
+
 Afterwards you can point your Apache web-server to `{{name}}-app/public`.
 
 Make sure you are allowing `.htaccess` files in your Apache configuration.
