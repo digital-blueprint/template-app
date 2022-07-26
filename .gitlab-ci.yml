@@ -30,6 +30,7 @@ linting:
     - yarn run lint
 
 deploy:
+  stage: deploy
   except:
     - schedules
   only:
