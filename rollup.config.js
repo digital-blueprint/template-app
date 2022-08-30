@@ -147,9 +147,10 @@ export default (async () => {
                     {src: 'assets/*.ico', dest: 'dist/' + (await getDistPath(pkg.name))},
                     {src: 'assets/*.svg', dest: 'dist/' + (await getDistPath(pkg.name))},
                     {src: 'assets/icon/*', dest: 'dist/' + (await getDistPath(pkg.name, 'icon'))},
+                    {src: 'assets/site.webmanifest', dest: 'dist', rename: pkg.internalName + '.webmanifest'},
                     {
-                        src: await getPackagePath('@dbp-toolkit/font-source-sans-pro', 'files/*'),
-                        dest: 'dist/' + (await getDistPath(pkg.name, 'fonts/source-sans-pro')),
+                        src: await getPackagePath('@tugraz/font-source-sans-pro', 'files/*'),
+                        dest: 'dist/local/' + pkg.name + '/fonts/source-sans-pro',
                     },
                     {
                         src: await getPackagePath('@dbp-toolkit/common', 'src/spinner.js'),
@@ -159,7 +160,6 @@ export default (async () => {
                         src: await getPackagePath('@dbp-toolkit/common', 'misc/browser-check.js'),
                         dest: 'dist/' + (await getDistPath(pkg.name)),
                     },
-                    {src: 'assets/manifest.json', dest: 'dist', rename: appName + '.manifest.json'},
                     {src: 'src/*.metadata.json', dest: 'dist'},
                     {
                         src: await getPackagePath('@dbp-toolkit/common', 'assets/icons/*.svg'),
