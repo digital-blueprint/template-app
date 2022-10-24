@@ -47,7 +47,7 @@
         "@dbp-toolkit/person-profile": "^0.2.2",
         "@tugraz/font-source-sans-pro": "^0.2.4",
         "@open-wc/scoped-elements": "^2.0.0",
-        "i18next": "^21.4.2",
+        "i18next": "^22.0.0",
         "lit": "^2.0.0"
     },
     "scripts": {
