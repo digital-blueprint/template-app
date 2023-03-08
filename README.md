@@ -19,6 +19,9 @@ yarn run watch
 # same as watch, but with babel, terser, etc active -> very slow
 yarn run watch-full
 
+# constantly build dist/bundle.js and run a local web-server on port 8001 using a custom assets directory assets_local/
+yarn run watch-local
+
 # run tests
 yarn test
 
