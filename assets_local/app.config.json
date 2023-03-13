@@ -36,7 +36,7 @@
     "matomoSiteId": 131
   },
   "developmentCustom": {
-    "basePath": "/apps/template-app/",
+    "basePath": "/tugapps/template-app/",
     "entryPointURL": "https://api-dev.tugraz.at",
     "keyCloakBaseURL": "https://auth-dev.tugraz.at/auth",
     "keyCloakRealm": "tugraz-vpu",
@@ -54,7 +54,7 @@
     "matomoSiteId": 131
   },
   "demoCustom": {
-    "basePath": "/apps/template-app/",
+    "basePath": "/tugapps/template-app/",
     "entryPointURL": "https://api-demo.tugraz.at",
     "keyCloakBaseURL": "https://auth-demo.tugraz.at/auth",
     "keyCloakRealm": "tugraz-vpu",
