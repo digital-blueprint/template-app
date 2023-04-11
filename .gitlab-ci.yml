@@ -6,7 +6,7 @@ cache:
     - _yarn_cache
 
 before_script:
-  - git config --global --add safe.directory "$CI_PROJECT_DIR"
+  - git config --global --add safe.directory '*'
   - git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.tugraz.at/".insteadOf "git@gitlab.tugraz.at:"
   - git submodule sync
   - git submodule update --init
