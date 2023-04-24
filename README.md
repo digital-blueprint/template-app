@@ -11,22 +11,22 @@ cd dbp-template-app
 git submodule update --init
 
 # install dependencies
-yarn install
+npm install
 
 # constantly build dist/bundle.js and run a local web-server on port 8001 
-yarn run watch
+npm run watch
 
 # same as watch, but with babel, terser, etc active -> very slow
-yarn run watch-full
+npm run watch-full
 
 # constantly build dist/bundle.js and run a local web-server on port 8001 using a custom assets directory assets_local/
-yarn run watch-local
+npm run watch-local
 
 # run tests
-yarn test
+npm test
 
 # build for deployment
-yarn build
+npm build
 ```
 
 Jump to <https://localhost:8001> and you should get a Single Sign On login page.
