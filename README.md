@@ -2,6 +2,8 @@
 
 [GitHub Repository](https://github.com/digital-blueprint/template-app)
 
+[![Build and Test](https://github.com/digital-blueprint/template-app/actions/workflows/build-test-publish.yml/badge.svg)](https://github.com/digital-blueprint/template-app/actions/workflows/build-test-publish.yml)
+
 ## Local development
 
 ```bash
