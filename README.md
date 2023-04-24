@@ -1,12 +1,12 @@
 # Frontend Template App
 
-[GitLab Repository](https://gitlab.tugraz.at/dbp/web-components/dbp-template-app)
+[GitHub Repository](https://github.com/digital-blueprint/template-app)
 
 ## Local development
 
 ```bash
 # get the source
-git clone git@gitlab.tugraz.at:dbp//web-components/dbp-template-app.git
+git clone https://github.com/digital-blueprint/template-app.git
 cd dbp-template-app
 git submodule update --init
 
@@ -33,9 +33,9 @@ Jump to <https://localhost:8001> and you should get a Single Sign On login page.
 
 ## Framework Documentation
 
-You can find more information about our framework, technolgies used and the
+You can find more information about our framework, technologies used and the
 development workflow in our [Frontend Developer
-Guide](https://gitlab.tugraz.at/dbp/web-components/frontend-docs)
+Guide](hhttps://handbook.digital-blueprint.org/frontend)
 
 # Get started
 
@@ -63,7 +63,7 @@ The main logic is based in the `src` folder.
 
 There are at least two files. One for a topic, one or more for an activity and some other files with e.g.: helper functions. (In our case ``i18n.js`` for the translation).
 
-``dbp-frontend-template-app.js`` is the entry point of the App. If you want to use it with the [app shell](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/app-shell):
+``dbp-frontend-template-app.js`` is the entry point of the App. If you want to use it with the [app shell](https://github.com/digital-blueprint/toolkit/tree/main/packages/app-shell):
 
 - Rename the file ``dbp-frontend-template-app.js`` to ``<your-app-name.js``
 - Change the ``dbp-frontend-template-app`` string to ``<your-app-name>``
@@ -83,7 +83,7 @@ There is another folder `i18n`.
 In this folder there is the whole translation based. You have subfolder for your different languages. In these subfolder you have a ``translation.json`` file where you can bin strings to your translation keys. For further information look at: https://www.i18next.com/
 
 The main structure - the topic - from the application is based in `dbp-frontend-template-app.topic.metadata.json.ejs`
-For more information about the structure look at: [Components](https://gitlab.tugraz.at/dbp/web-components/frontend-docs/-/blob/master/components.md)
+For more information about the structure look at: [Components](https://handbook.digital-blueprint.org/frontend/components)
 
 - Change the ``name`` in german and english (or add another language if you support one)
 - Change the ```short_name```
@@ -101,7 +101,7 @@ The activity metadata should be also based in the assets folder. The file ``dbp-
 
 ## Design
 
-This source is delivered with a clean brandable design. If you want your own design fork the repo [toolkit](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master), make your own appshell and change vars in [common/styles.js](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/common/styles.js)
+This source is delivered with a clean brandable design. If you want your own design fork the repo [toolkit](https://github.com/digital-blueprint/toolkit/tree/main), make your own appshell and change vars in [common/styles.js](https://github.com/digital-blueprint/toolkit/tree/main/packages/common/styles.js)
 
 The style for the activities itself, can be changed in ````src/<your-activity-name>.js``` in the function ```static get styles()```.
 

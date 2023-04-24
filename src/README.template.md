@@ -12,7 +12,7 @@ List of placeholders:
 - {{NAME}}: Name of the app in uppercase, like "FORMALIZE"
 - {{bundle-path}}: GitLab bundle repository path, like "formalize/dbp-relay-formalize-bundle"
 - {{bundle-name}}: Name of the bundle for packagist, like "relay-formalize-bundle"
-- {{app-path}}: GitLab repository path of the frontend application, like "formalize/formalize"
+- {{app-path}}: GitLab repository path of the frontend application, like "digital-blueprint/formalize-app"
 - {{app-description}}: A brief description of the app in 2-5 sentences
 - {{list-of-activities}}: A list of activities in the app
 - {{app-based-attributes}}: Add app based attributes to the table(name | type | [activity-name](link-to-activity))
@@ -23,11 +23,11 @@ List of placeholders:
 
 # {{Name}} activities
 
-Here you can find the individual activities of the `{{name}}` App. If you want to use the whole app look at [{{name}}](https://gitlab.tugraz.at/dbp/{{app-path}}).
+Here you can find the individual activities of the `{{name}}` App. If you want to use the whole app look at [{{name}}](https://github.com/{{app-path}}).
 
 ## Usage of an activity
 
-You can use every activity alone. Take a look at our examples [here]({{app-path}}/-/tree/main/examples).
+You can use every activity alone. Take a look at our examples [here](https://github.com/{{app-path}}/-/tree/main/examples).
 
 
 ## Activities
