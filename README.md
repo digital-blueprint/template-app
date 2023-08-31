@@ -9,7 +9,7 @@
 ```bash
 # get the source
 git clone https://github.com/digital-blueprint/template-app.git
-cd dbp-template-app
+cd template-app
 git submodule update --init
 
 # install dependencies
