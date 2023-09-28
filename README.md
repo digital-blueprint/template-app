@@ -39,6 +39,8 @@ You can find more information about our framework, technologies used and the
 development workflow in our [Frontend Developer
 Guide](hhttps://handbook.digital-blueprint.org/frontend)
 
+# TODO add instruction how to start the api server
+
 # Get started
 
 To create your own app copy this Repository.
@@ -46,18 +48,13 @@ To create your own app copy this Repository.
 ## The construct
 
 ### /assets/*
-
+# TODO add renaming suggestions as mentioned in the task description
 The main html construct is based in the asset folder: `dbp-frontend-template-app.html.ejs`
 You can change here favicons, the color variables, fonts and the outer html construct.
 
 - To get started rename this file to `<your-app-name>.html.ejs`
 
-For favicon support in multiple browsers there exist one folder and twi other files. The icons - in different size - are based in the folder `icon`. The file `dbp-frontend-template-app.browserconfig.xml.ejs` is for styled windows tiles. `manifest.json` tells the browser information about the website on different device. (short name, name, start url, icons, colors ...)
-
-- Change `dbp-frontend-template-app.browserconfig.xml.ejs` to `<your-app-name>.browserconfig.xml.ejs`
-    - (optional) Change the TitleColor
-- In `manifest.json` change the short_name, the name, the starter url and the path to the icon folder
-    - (optional) Change the background_color and/or the theme_color
+For favicon support in multiple browsers there exist one folder and twi other files. The icons - in different size - are based in the folder `icon`.
 
 ### /src/*
 
