@@ -39,7 +39,15 @@ You can find more information about our framework, technologies used and the
 development workflow in our [Frontend Developer
 Guide](hhttps://handbook.digital-blueprint.org/frontend)
 
-# TODO add instruction how to start the api server
+## Starting the API server
+
+If you want to add backend implenetations, you need to start the api server. For this you will need the Middleware API that you cloned according to the onboarding developer guide.
+
+```bash
+# start api server
+cd api/docker
+sudo docker-compose up
+```
 
 # Get started
 
