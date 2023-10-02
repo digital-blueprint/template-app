@@ -56,7 +56,7 @@ To create your own app copy this Repository.
 ## The construct
 
 ### /assets/*
-# TODO add renaming suggestions as mentioned in the task description
+
 The main html construct is based in the asset folder: `dbp-frontend-template-app.html.ejs`
 You can change here favicons, the color variables, fonts and the outer html construct.
 
