@@ -60,7 +60,7 @@ To create your own app copy this Repository.
 The main html construct is based in the asset folder: `dbp-frontend-template-app.html.ejs`
 You can change here favicons, the color variables, fonts and the outer html construct.
 
-- To get started rename this file to `<your-app-name>.html.ejs`
+- To get started rename this file to `dbp-frontend-first-app.html.ejs`
 
 For favicon support in multiple browsers there exist one folder and twi other files. The icons - in different size - are based in the folder `icon`.
 
@@ -72,16 +72,15 @@ There are at least two files. One for a topic, one or more for an activity and s
 
 ``dbp-frontend-template-app.js`` is the entry point of the App. If you want to use it with the [app shell](https://github.com/digital-blueprint/toolkit/tree/main/packages/app-shell):
 
-- Rename the file ``dbp-frontend-template-app.js`` to ``<your-app-name.js``
-- Change the ``dbp-frontend-template-app`` string to ``<your-app-name>``
+- Rename the file ``dbp-frontend-template-app.js`` to ``dbp-frontend-first-app.js``
+- Change the ``dbp-frontend-template-app`` string to ``dbp-frontend-first-app``
 
 ``dbp-template-activity.js`` is one activity of the topic. The main code of the activity is based there.
 
-- Copy or rename the file ``dbp-template-activity.js`` to ``<your-activity-name>.js`` (the name given in ``<your-activity-name>.metadata.json``: ``module_src``)
+- Copy or rename the file ``dbp-template-activity.js`` to ``dbp-first-activity.js`` (the name given in ``dbp-template-activity.metadata.json``: ``module_src``)
 
 The class in this file is based on [lit-elements](https://lit-element.polymer-project.org/)
 
-- Change the class name from ``StarterActivity`` to your prefered class name.
 - Change in the last line ``commonUtils.defineCustomElement('dbp-template-activity', StarterActivity);`` 
     - The first string ``dbp-template-activity`` is the given ``element`` name in ``dbp-template-activity.metadata.json``
     - The second string ``StarterActivity`` is your given class name in the point above.
@@ -100,11 +99,12 @@ For more information about the structure look at: [Components](https://handbook.
 
 The activity metadata should be also based in the assets folder. The file ``dbp-template-activity.metadata.json`` is an example for an activity. It is contains basic description of an activity.
 
-- Copy or rename the file ``dbp-template-activity.metadata.json`` to ``<your-activity-name>.metadata.json``
+- Copy or rename the file ``dbp-template-activity.metadata.json`` to ``dbp-first-activity.metadata.json``
 - Change ```element``` to your element name.
 - Change the ``module_src`` - this is the file where the code of your activity is based.
 - Change the ``routing_name``(has to be unique and url safe), ``name``, ``short_name`` and add a ``description`` 
-
+- Copy or rename the file ``dbp-template-activity.topic.metadata.json`` to `` dbp-frontend-first-app.topic.metadata.json``
+- In rollup.config.js change all ``template`` substrings to ``first``.
 
 ## Design
 
