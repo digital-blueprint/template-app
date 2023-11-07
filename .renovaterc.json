@@ -10,6 +10,10 @@
         {
           "matchPackageNames": ["find-cache-dir"],
           "allowedVersions": "<4"
+        },
+        {
+          "matchPackageNames": ["@open-wc/scoped-elements"],
+          "allowedVersions": "<3"
         }
     ]
 }
