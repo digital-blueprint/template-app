@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {} }:
   pkgs.mkShell {
     nativeBuildInputs = with pkgs; [
-      nodejs_18
+      nodejs_20
       gnumake
     ];
 }
