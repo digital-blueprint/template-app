@@ -132,7 +132,6 @@ export default (async () => {
             sourcemap: true,
         },
         treeshake: prodBuild,
-        preserveEntrySignatures: false,
         onwarn: function (warning, warn) {
             // ignore chai warnings
             if (warning.code === 'CIRCULAR_DEPENDENCY' && warning.message.includes('chai')) {
