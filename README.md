@@ -15,7 +15,7 @@ git submodule update --init
 # install dependencies
 npm install
 
-# constantly build dist/bundle.js and run a local web-server on port 8001 
+# constantly build dist/bundle.js and run a local web-server on port 8001
 npm run watch
 
 # same as watch, but with babel, terser, etc active -> very slow
@@ -55,7 +55,7 @@ To create your own app, first copy this repository.
 
 ## The construct
 
-### /assets/*
+### /assets/\*
 
 The main html construct is based in the asset folder: `dbp-frontend-template-app.html.ejs`
 You can change here favicons, the color variables, fonts and the outer html construct.
@@ -64,7 +64,7 @@ You can change here favicons, the color variables, fonts and the outer html cons
 
 For favicon support in multiple browsers there exist one folder and twi other files. The icons - in different size - are based in the folder `icon`.
 
-### /src/*
+### /src/\*
 
 The main logic is based in the `src` folder.
 
@@ -84,11 +84,11 @@ If you want to use it with the [app shell](https://github.com/digital-blueprint/
 
 The class in this file is based on [lit-elements](https://lit-element.polymer-project.org/)
 
-- Change in the last line `commonUtils.defineCustomElement('dbp-template-activity', StarterActivity);` 
+- Change in the last line `commonUtils.defineCustomElement('dbp-template-activity', StarterActivity);`
     - The first string `dbp-template-activity` is the given `element` name in `dbp-template-activity.metadata.json`
     - The second string `StarterActivity` is your given class name in the point above.
 
-There is another folder `i18n`. 
+There is another folder `i18n`.
 In this folder there is the whole translation based. You have subfolder for your different languages. In these subfolder you have a `translation.json` file where you can bin strings to your translation keys. For further information look at: https://www.i18next.com/
 
 The main structure - the topic - from the application is based in `dbp-frontend-template-app.topic.metadata.json.ejs`
@@ -96,7 +96,7 @@ For more information about the structure look at: [Components](https://handbook.
 
 - Change the `name` in german and english (or add another language if you support one)
 - Change the `short_name`
-- Add a `description` of your App 
+- Add a `description` of your App
 - Change the `routong_name`
 - Add the path of your `activities.metadata.json`
 
@@ -106,7 +106,7 @@ It contains the basic description of an activity.
 - Copy or rename the file `dbp-template-activity.metadata.json` to `dbp-first-activity.metadata.json`
 - Change `element` to your element name.
 - Change the `module_src` - this is the file where the code of your activity is based.
-- Change the `routing_name`(has to be unique and url safe), `name`, `short_name` and add a `description` 
+- Change the `routing_name`(has to be unique and url safe), `name`, `short_name` and add a `description`
 - Copy or rename the file `dbp-template-activity.topic.metadata.json` to `dbp-frontend-first-app.topic.metadata.json`
 - In `rollup.config.js` change all `template` substrings to `first`.
 

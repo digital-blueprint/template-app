@@ -1,5 +1,4 @@
-Frontend App README Template
-=============================
+# Frontend App README Template
 
 <!--
 This should act as a template README.md for a new frontend application.
@@ -31,7 +30,7 @@ List of placeholders:
 ## Prerequisites
 
 - You need the [API server](https://github.com/digital-blueprint/relay-server-template) running
-- You need the [{{bundle-name}}](https://github.com/{{bundle-path}}) 
+- You need the [{{bundle-name}}](https://github.com/{{bundle-path}})
 - For more information please visit the [{{name}} project documentation](https://dbp-demo.tugraz.at/site/software/{{name}}.html)
 
 ## Local development
@@ -45,7 +44,7 @@ git submodule update --init
 # install dependencies
 npm install
 
-# constantly build dist/bundle.js and run a local web-server on port 8001 
+# constantly build dist/bundle.js and run a local web-server on port 8001
 npm run watch
 
 # constantly build dist/bundle.js and run a local web-server on port 8001 using a custom assets directory assets_local/
@@ -93,6 +92,7 @@ npx @digital-blueprint/cli update-app {{name}}
 ## Activities
 
 This app has the following activities:
+
 - {{list-of-activities}}
 
 You can find the documentation of these activities in the [{{name}} activities documentation](https://github.com/{{app-path}}/tree/main/src).
@@ -103,17 +103,17 @@ You can find the documentation of these activities in the [{{name}} activities d
 
 You can add multiple attributes to the `<dbp-{{name}}>` tag.
 
-| attribute name | value | Link to description |
-|----------------|-------| ------------|
-| `provider-root` | Boolean | [appshell](https://github.com/digital-blueprint/toolkit/tree/main/packages/app-shell#attributes) |
-| `lang`         | String | [language-select](https://github.com/digital-blueprint/toolkit/tree/main/packages/language-select#attributes) | 
-| `entry-point-url` | String | [appshell](https://github.com/digital-blueprint/toolkit/tree/main/packages/app-shell#attributes) |
-| `keycloak-config` | Object | [appshell](https://github.com/digital-blueprint/toolkit/tree/main/packages/app-shell#attributes) |
-| `base-path` | String | [appshell](https://github.com/digital-blueprint/toolkit/tree/main/packages/app-shell#attributes) |
-| `src` | String | [appshell](https://github.com/digital-blueprint/toolkit/tree/main/packages/app-shell#attributes) |
-| `html-overrides` | String | [common](https://github.com/digital-blueprint/toolkit/tree/main/packages/common#overriding-slots-in-nested-web-components) |
-| `themes` | Array | [theme-switcher](https://github.com/digital-blueprint/toolkit/tree/main/packages/theme-switcher#themes-attribute) |
-| `darkModeThemeOverride` | String | [theme-switcher](https://github.com/digital-blueprint/toolkit/tree/main/packages/theme-switcher#themes-attribute) |
+| attribute name          | value   | Link to description                                                                                                        |
+| ----------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `provider-root`         | Boolean | [appshell](https://github.com/digital-blueprint/toolkit/tree/main/packages/app-shell#attributes)                           |
+| `lang`                  | String  | [language-select](https://github.com/digital-blueprint/toolkit/tree/main/packages/language-select#attributes)              |
+| `entry-point-url`       | String  | [appshell](https://github.com/digital-blueprint/toolkit/tree/main/packages/app-shell#attributes)                           |
+| `keycloak-config`       | Object  | [appshell](https://github.com/digital-blueprint/toolkit/tree/main/packages/app-shell#attributes)                           |
+| `base-path`             | String  | [appshell](https://github.com/digital-blueprint/toolkit/tree/main/packages/app-shell#attributes)                           |
+| `src`                   | String  | [appshell](https://github.com/digital-blueprint/toolkit/tree/main/packages/app-shell#attributes)                           |
+| `html-overrides`        | String  | [common](https://github.com/digital-blueprint/toolkit/tree/main/packages/common#overriding-slots-in-nested-web-components) |
+| `themes`                | Array   | [theme-switcher](https://github.com/digital-blueprint/toolkit/tree/main/packages/theme-switcher#themes-attribute)          |
+| `darkModeThemeOverride` | String  | [theme-switcher](https://github.com/digital-blueprint/toolkit/tree/main/packages/theme-switcher#themes-attribute)          |
 
 {{app-based-attributes}}
 
@@ -123,12 +123,7 @@ If you are not using the `provider-root` attribute to "terminate" all provider a
 you need to manually add these attributes so that the topic will work properly:
 
 ```html
-<dbp-{{name}}
-    auth
-    requested-login-status
-    analytics-event
->
-</dbp-{{name}}>
+<dbp-{{name}} auth requested-login-status analytics-event></dbp-{{name}}>
 ```
 
 ### Design
