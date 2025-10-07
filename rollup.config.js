@@ -198,11 +198,12 @@ export default (async () => {
                         buildInfo: getBuildInfo(appEnv),
                     },
                 }),
-            !isRolldown && resolve({
-                browser: true,
-                preferBuiltins: true,
-                exportConditions: !prodBuild ? ['development'] : [],
-            }),
+            !isRolldown &&
+                resolve({
+                    browser: true,
+                    preferBuiltins: true,
+                    exportConditions: !prodBuild ? ['development'] : [],
+                }),
             prodBuild &&
                 license({
                     banner: {
@@ -232,9 +233,10 @@ export default (async () => {
                         },
                     },
                 }),
-            !isRolldown && commonjs({
-                include: 'node_modules/**',
-            }),
+            !isRolldown &&
+                commonjs({
+                    include: 'node_modules/**',
+                }),
             !isRolldown && json(),
             urlPlugin(await getUrlOptions(pkg.name, 'shared')),
             whitelabel &&
