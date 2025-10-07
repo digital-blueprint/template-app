@@ -32,6 +32,7 @@ let httpHost =
     process.env.ROLLUP_WATCH_HOST !== undefined ? process.env.ROLLUP_WATCH_HOST : '127.0.0.1';
 let httpPort =
     process.env.ROLLUP_WATCH_PORT !== undefined ? parseInt(process.env.ROLLUP_WATCH_PORT) : 8001;
+let isRolldown = process.argv.some((arg) => arg.includes('rolldown'));
 
 // if true, app assets and configs are whitelabel
 let whitelabel;
@@ -131,7 +132,7 @@ export default (async () => {
         output: {
             dir: 'dist',
             entryFileNames: '[name].js',
-            chunkFileNames: 'shared/[name].[hash].[format].js',
+            chunkFileNames: 'shared/[name].[hash].js',
             format: 'esm',
             sourcemap: true,
         },
@@ -197,7 +198,7 @@ export default (async () => {
                         buildInfo: getBuildInfo(appEnv),
                     },
                 }),
-            resolve({
+            !isRolldown && resolve({
                 browser: true,
                 preferBuiltins: true,
                 exportConditions: !prodBuild ? ['development'] : [],
@@ -231,10 +232,10 @@ export default (async () => {
                         },
                     },
                 }),
-            commonjs({
+            !isRolldown && commonjs({
                 include: 'node_modules/**',
             }),
-            json(),
+            !isRolldown && json(),
             urlPlugin(await getUrlOptions(pkg.name, 'shared')),
             whitelabel &&
                 copy({
