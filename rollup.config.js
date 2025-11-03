@@ -237,7 +237,7 @@ export default (async () => {
                         {
                             src: await getPackagePath('@fontsource/nunito-sans', '.'),
                             dest: 'dist/' + (await getDistPath(pkg.name, 'fonts')),
-                            rename: 'nunito-sans'
+                            rename: 'nunito-sans',
                         },
                         {
                             src: await getPackagePath('@dbp-toolkit/common', 'src/spinner.js'),
