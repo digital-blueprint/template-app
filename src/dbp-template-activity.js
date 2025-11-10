@@ -57,6 +57,10 @@ class StarterActivity extends ScopedElementsMixin(DBPLitElement) {
                 .hidden {
                     display: none;
                 }
+                .activity-name {
+                    font-weight: 200;
+                    margin-bottom: 20px;
+                }
             `,
         ];
     }
@@ -81,7 +85,7 @@ class StarterActivity extends ScopedElementsMixin(DBPLitElement) {
         let i18n = this._i18n;
 
         return html`
-            <h3>${this.activity.getName(this.lang)}</h3>
+            <h2 class="activity-name">${this.activity.getName(this.lang)}</h2>
             <p>${this.activity.getDescription(this.lang)}</p>
 
             <div class="${loggedIn ? '' : 'hidden'}">
