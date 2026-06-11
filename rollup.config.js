@@ -5,13 +5,7 @@ import serve from 'rollup-plugin-serve';
 import license from 'rollup-plugin-license';
 import emitEJS from 'rollup-plugin-emit-ejs';
 import {getBabelOutputPlugin} from '@rollup/plugin-babel';
-import {
-    getPackagePath,
-    getBuildInfo,
-    generateTLSConfig,
-    getDistPath,
-    assetPlugin,
-} from '@dbp-toolkit/dev-utils';
+import {getPackagePath, getBuildInfo, getDistPath, assetPlugin} from '@dbp-toolkit/dev-utils';
 import {createRequire} from 'node:module';
 
 const require = createRequire(import.meta.url);
@@ -326,7 +320,6 @@ export default (async () => {
                       host: httpHost,
                       port: httpPort,
                       historyApiFallback: config.basePath + appName + '.html',
-                      https: await generateTLSConfig(),
                       headers: {
                           'Content-Security-Policy': config.CSP,
                       },
