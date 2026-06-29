@@ -303,10 +303,8 @@ export default (async () => {
                         [
                             '@babel/preset-env',
                             {
-                                loose: false,
                                 modules: false,
                                 shippedProposals: true,
-                                bugfixes: true,
                                 targets: {
                                     esmodules: true,
                                 },
