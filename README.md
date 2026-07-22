@@ -108,7 +108,7 @@ It contains the basic description of an activity.
 - Change the `module_src` - this is the file where the code of your activity is based.
 - Change the `routing_name`(has to be unique and url safe), `name`, `short_name` and add a `description`
 - Copy or rename the file `dbp-template-activity.topic.metadata.json` to `dbp-frontend-first-app.topic.metadata.json`
-- In `rollup.config.js` change all `template` substrings to `first`.
+- In `rolldown.config.js` change all `template` substrings to `first`.
 
 ## Design
 
