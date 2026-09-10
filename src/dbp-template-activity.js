@@ -27,6 +27,7 @@ class StarterActivity extends ScopedElementsMixin(DBPLitElement) {
 
     static get properties() {
         return {
+            ...super.properties,
             lang: {type: String},
             auth: {type: Object},
             name: {type: String},
@@ -73,7 +74,7 @@ class StarterActivity extends ScopedElementsMixin(DBPLitElement) {
             },
         });
         if (!response.ok) {
-            throw new Error(response);
+            throw new Error(`Request failed: ${response.status} ${response.statusText}`);
         }
 
         let data = await response.json();
